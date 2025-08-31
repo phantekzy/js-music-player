@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Muzika</title>
+
+  <!-- Link to CSS file -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Your JavaScript file -->
+  <script src="script.js" defer></script>
+
+  <!-- Font Awesome icons -->
+  <script src="https://kit.fontawesome.com/07e9e5aaca.js" crossorigin="anonymous"></script>
+
+  <!-- Eruda console (for debugging on mobile) -->
+  <script src="https://cdn.jsdelivr.net/npm/eruda"></script>
+  <script>eruda.init();</script>
+</head>
+<body>
+  <div class="container">
+    <div class="music-player">
+
+      <!-- Navigation buttons (menu + back) -->
+      <nav>
+        <div class="circle">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+        <div class="circle">
+          <i class="fa-solid fa-angle-left"></i>
+        </div>
+      </nav>
+
+      <!-- Song image -->
+      <img src="img/pic.jpg" class="song-img">
+
+      <!-- Song title + description -->
+      <h1>From Past To Present</h1>
+      <p>The Elder Scrolls Skyrim</p>
+
+      <!-- Audio player -->
+      <audio id="song">
+        <source src="audio/Fptp.mp3" type="audio/mpeg">
+      </audio>
+
+      <!-- Progress bar -->
+      <input type="range" value="0" id="progress">
+
+      <!-- Controls (prev / play-pause / next) -->
+      <div class="controls">
+        <div><i class="fa-solid fa-backward"></i></div>
+        <div><i class="fa-solid fa-play" id="ctrlIcon"></i></div>
+        <div><i class="fa-solid fa-forward"></i></div>
+      </div>
+
+    </div>
+  </div>
+</body>
+</html>
